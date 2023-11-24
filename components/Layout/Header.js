@@ -12,12 +12,12 @@ const Header = () => {
     <section className="shadow-2xl  bg-gray-200">
       <div className="max-w-6xl px-4 mx-auto">
         <nav className="flex items-center justify-between py-4">
-          <a href="/" className="text-3xl font-semibold leading-none dark:text-gray-400">
+          <a href="/" className="text-3xl font-semibold leading-none ">
             Logo
           </a>
           <div className="flex lg:hidden">
             <button
-              className="flex items-center px-3 py-2 text-blue-600 border border-blue-200 rounded dark:text-gray-400 navbar-burger hover:text-blue-800 hover:border-blue-300"
+              className="flex items-center px-3 py-2 text-blue-600 border border-blue-200 rounded navbar-burger hover:text-blue-800 hover:border-blue-300"
               onClick={toggleShow}
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16">

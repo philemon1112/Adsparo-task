@@ -67,7 +67,7 @@ function BlogSection() {
                   </div> */}
 
                   <div className=" mx-auto ">
-                    <h2 className="font-bold text-lg md:text-4xl text-gray-800">Latest from Our Blog</h2>
+                    <h2 className="font-bold text-xl md:text-4xl text-gray-800">Latest from Our Blog</h2>
 
                     <p className="text-gray-500 font-normal text-base max-w-md mt-5 leading-7">These are our most recent blog posts click on them to read.</p>
                   </div>

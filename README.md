@@ -1,6 +1,77 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Lemon's Blog
+A simple blog site with a header , footer and main content section with data fetched from the JSONPlaceholder API [https://jsonplaceholder.typicode.com/posts](https://jsonplaceholder.typicode.com/posts).
+
+### Showcase
+
+#### Hero Section desktop
+![Hero Section](https://github.com/philemon1112/Adsparo-task/blob/main/public/Assets/Img/DesktopHero.png)
+
+#### Blogs grid desktop
+![Blogs grid](https://github.com/philemon1112/Adsparo-task/blob/main/public/Assets/Img/DesktopBlogsGrid.png)
+
+#### Blogs details Modal desktop
+![Blog details modal](https://github.com/philemon1112/Adsparo-task/blob/main/public/Assets/Img/DesktopModal.png)
+
+#### Footer Section 
+![Footer Section](https://github.com/philemon1112/Adsparo-task/blob/main/public/Assets/Img/FooterSection.png)
+
+#### 404 Error Page 
+![404 error page](https://github.com/philemon1112/Adsparo-task/blob/main/public/Assets/Img/NotFoundPage.png)
+
+#### Mobile Hero Section 
+![Mobile Hero Section](https://github.com/philemon1112/Adsparo-task/blob/main/public/Assets/Img/MobileHero.png)
+
+#### Mobile Bottom Nav sheet 
+![Mobile Blog details modal](https://github.com/philemon1112/Adsparo-task/blob/main/public/Assets/Img/MobileHero.png)
+
+## Project Structure
+
+```bash
+
+
+├── app/
+    ├── error.js
+    ├── globals.css
+    ├── layout.js
+    ├── not-found.js
+    ├── page.js
+├── components/
+    ├── Cards/
+        ├── BlogsCard.js
+        ├── LoadingCard.js
+    ├── Layout/
+        ├── Footer.js
+        ├── Header.js
+    ├── Sections/
+        ├── BlogSection.js
+        ├── HeroSection.js
+    ├── Shared/
+        ├── BlogsCard.js
+        ├── LoadingCard.js
+├── public/
+    ├── Asets/
+        ├── Img/
+        ├── Svg/
+
+
+```
+
+[`app`]("/app")
+- This is the app Router for nextjs 13 , it contains the main route of the application, with page.js being the index page
+
+[`public/Assets`]("./public/Assets")
+
+- Contains images and some SVG icons used in the project
+
+[`components`]("/components")
+
+- Contains reusable components such as cards, modals, Layout, various page sections, and shared components
+
+
+
+
+## How to setup
 
 First, run the development server:
 
@@ -22,15 +93,15 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+This project makes use of a list of npm packages. They can be installed during the process of setting up the application using `npm install`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `axios` - For making external api calls / request
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- `@headlessui/react` - This is a tailwindcss support library  
 
-## Deploy on Vercel
+- `@heroicons/react` -  This package contains a list of icon packs used in the project
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The nextjs project also came with already installed packages such as `next`, `react`, `tailwindcss` and `react-dom`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+

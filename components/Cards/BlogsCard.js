@@ -1,17 +1,30 @@
 "use client"
-import React,{useState} from 'react'
-import PostDetailsSidebar from '../molecules/PostDetailsSideBar'
-import PostDetails from '../molecules/PostDetails';
-import MobilePostDetailsSidebar from '../molecules/MobilePostDetails';
+import React,{useState, useEffect} from 'react'
+import PostDetailsSidebar from '../Shared/PostDetailsSideBar'
+import PostDetails from '../Shared/PostDetails';
+import MobilePostDetailsSidebar from '../Shared/MobilePostDetails';
 
 function BlogsCard({data}) {
     const [blogDetails, setBlogDetails] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
 
     const toggleBlogDetails = () => {
         setBlogDetails(!blogDetails);
       };
 
-    const isMobile = window?.matchMedia('(max-width: 768px)').matches;
+      useEffect(() => {
+        const handleResize = () => {
+          setIsMobile(window.innerWidth <= 768);
+        };
+    
+        handleResize(); // Check initial width
+    
+        window.addEventListener('resize', handleResize);
+    
+        return () => {
+          window.removeEventListener('resize', handleResize);
+        };
+      }, []);
 
   return (
     <div onClick={() => setBlogDetails(!blogDetails)}>
