@@ -59,28 +59,28 @@ const Header = () => {
               </button>
             </div>
             <ul className="px-4 text-left mt-7">
-              <li>
-                <a href="/" className="text-sm mt-10 text-gray-700 hover:text-blue-400 dark:text-gray-100">Home</a>
+              <li className="text-base pt-6 text-gray-700 hover:text-blue-400">
+                <a href="/" >Home</a>
               </li>
-              <li>
-                <a href="/" className="text-sm mt-10 text-gray-700 hover:text-blue-400 dark:text-gray-100">Blogs</a>
+              <li className="text-base pt-6 text-gray-700 hover:text-blue-400">
+                <a href="/" >About</a>
               </li>
-              <li>
-                <a href="/" className="text-sm mt-10 text-gray-700 hover:text-blue-400 dark:text-gray-100">Services</a>
+              <li className="text-base pt-6 text-gray-700 hover:text-blue-400">
+                <a href="/">Blogs</a>
+              </li>
+              <li className="text-base pt-6 text-gray-700 hover:text-blue-400">
+                <a href="/">Services</a>
               </li>
               {/* Other mobile sidebar list items */}
             </ul>
 
-            <div className="relative inline-flex mt-10 group">
-                    <div className="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+            <div className="relative inline-flex mt-10 group w-full">
+                    <div className="absolute w-full transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
 
-                    <a href="#" title="" className="relative inline-flex px-4 py-3 mr-2 text-xs font-semibold leading-none text-center text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900" role="button">
+                    <a href="#" title="" className="relative w-full inline-block px-4 py-3 mr-2 text-xs font-semibold leading-none text-center text-white transition-all duration-200 bg-gray-900 rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900" role="button">
                         Get Started
                     </a>
                 </div>
-            {/* <div className="block mt-5 lg:hidden">
-              <a href="/" className="inline-block w-full px-4 py-3 mr-2 text-xs font-semibold leading-none text-center text-gray-100 bg-blue-600 rounded-full dark:hover:bg-blue-400 dark:bg-blue-300 dark:text-gray-700 hover:bg-blue-700">Contact us</a>
-            </div> */}
           </div>
         </nav>
       </div>

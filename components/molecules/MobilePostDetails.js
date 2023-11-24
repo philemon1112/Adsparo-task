@@ -4,7 +4,7 @@ import { Fragment } from 'react'
 import { Transition, Dialog} from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 
-export default function PostDetailsSidebar({ open, setOpen, children }) {
+export default function MobilePostDetailsSidebar({ open, setOpen, children }) {
 
     const [show, setShow] = useState(open);
 
@@ -14,8 +14,7 @@ export default function PostDetailsSidebar({ open, setOpen, children }) {
 
   return (
     <Transition.Root show={show} as={Fragment}>
-        {/* for desktop screens  */}
-        <Dialog as="div" className="relative z-[99] hidden md:flex" onClose={setOpen}>
+<Dialog as="div" className="relative z-[99] " onClose={setOpen}>
             <Transition.Child
                 as={Fragment}
                 enter="ease-in-out duration-500"
@@ -30,15 +29,15 @@ export default function PostDetailsSidebar({ open, setOpen, children }) {
                 
             <div className="fixed inset-0 overflow-hidden">
                 <div className="absolute inset-0 overflow-hidden">
-                    <div className="pointer-events-none fixed inset-y-0 right-0 flex max-w-full pl-10">
+                    <div className="pointer-events-none fixed inset-0 right-0 flex max-w-full">
                         <Transition.Child
                             as={Fragment}
                             enter="transform transition ease-in-out duration-500 sm:duration-700"
-                            enterFrom="translate-x-full"
-                            enterTo="translate-x-0"
+                            enterFrom="translate-y-full"
+                            enterTo="translate-y-0"
                             leave="transform transition ease-in-out duration-500 sm:duration-700"
-                            leaveFrom="translate-x-0"
-                            leaveTo="translate-x-full"
+                            leaveFrom="translate-y-0"
+                            leaveTo="translate-y-full"
                         >
                             <Dialog.Panel className="pointer-events-auto relative w-screen max-w-md">
                                 <Transition.Child
@@ -51,27 +50,15 @@ export default function PostDetailsSidebar({ open, setOpen, children }) {
                                     leaveTo="opacity-0"
                                 >
                                     <div className="absolute top-0 left-0 -ml-8 flex pt-4 pr-2 sm:-ml-10 sm:pr-4">
-                                        <button
-                                            type="button"
-                                            className="rounded-md text-gray-300 hover:text-white focus:outline-none"
-                                            onClick={() => setOpen(false)}
-                                        >
-                                            <span className="sr-only">
-                                                Close panel
-                                            </span>
-                                            <XMarkIcon
-                                                className="h-6 w-6"
-                                                aria-hidden="true"
-                                            />
-                                        </button>
+                                        <div className="fixed -z-1 inset-0 opacity-100" aria-hidden="true" onClick={() => setOpen(false)}></div>
                                     </div>
                                 </Transition.Child>
-                                <div className="flex h-full flex-col overflow-y-scroll bg-white shadow-xl">
-                                    <div className="relative">
-                                        {children} 
-                                    </div>
-                                </div>
-                                
+                                      <div className="absolute flex flex-col inset-x-0 bottom-0 rounded-tl-xl rounded-tr-xl p-2 h-fit transition-all translate-y-0 bg-white"  >
+                                          <div className="relative flex items-center justify-center pb-1 after:absolute after:-top-1 after:left-1/2 after:rounded-full after:-translate-x-1/2 after:w-10 after:h-1 after:bg-gray-300 [&amp;_.bottomsheet-title]:pt-2">
+                                          </div>
+                                          <div className="flex grow items-center justify-center">{children}</div>
+                                      </div>
+                                       
                             </Dialog.Panel>
                         </Transition.Child>
                     </div>
