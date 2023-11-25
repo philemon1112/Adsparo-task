@@ -23,7 +23,7 @@ A simple blog site with a header , footer and main content section with data fet
 ![Mobile Hero Section](https://github.com/philemon1112/Adsparo-task/blob/main/public/Assets/Img/MobileHero.png)
 
 #### Mobile Bottom Nav sheet 
-![Mobile Blog details modal](https://github.com/philemon1112/Adsparo-task/blob/main/public/Assets/Img/MobileHero.png)
+![Mobile Blog details modal](https://github.com/philemon1112/Adsparo-task/blob/main/public/Assets/Img/MobileModal.png)
 
 ## Project Structure
 
