@@ -1,6 +1,6 @@
 
 # Lemon's Blog
-A simple blog site with a header , footer and main content section with data fetched from the JSONPlaceholder API [https://jsonplaceholder.typicode.com/posts](https://jsonplaceholder.typicode.com/posts).
+A simple blog site with a header , footer and main content section area , where data is fetched from the JSONPlaceholder API [https://jsonplaceholder.typicode.com/posts](https://jsonplaceholder.typicode.com/posts).
 
 ### Showcase
 
@@ -95,11 +95,11 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 This project makes use of a list of npm packages. They can be installed during the process of setting up the application using `npm install`
 
-- `axios` - For making external api calls / request
+- `axios` - For making external api calls / request.
 
-- `@headlessui/react` - This is a tailwindcss support library  
+- `@headlessui/react` - This is a tailwindcss support library.  
 
-- `@heroicons/react` -  This package contains a list of icon packs used in the project
+- `@heroicons/react` -  This package contains a list of icon packs used in the project.
 
 The nextjs project also came with already installed packages such as `next`, `react`, `tailwindcss` and `react-dom`.
 
