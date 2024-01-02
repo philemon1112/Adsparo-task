@@ -58,15 +58,15 @@ A simple blog site with a header , footer and main content section area , where 
 ```
 
 [`app`]("/app")
-- This is the app Router for nextjs 13 , it contains the main route of the application, with page.js being the index page
+- This is the app Router for nextjs 13 , it contains the main route of the application, with page.js being the index page.
 
 [`public/Assets`]("./public/Assets")
 
-- Contains images and some SVG icons used in the project
+- Contains images and some SVG icons used in the project.
 
 [`components`]("/components")
 
-- Contains reusable components such as cards, modals, Layout, various page sections, and shared components
+- Contains reusable components such as cards, modals, Layout, various page sections, and shared components.
 
 
 
