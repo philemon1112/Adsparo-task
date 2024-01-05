@@ -93,7 +93,7 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ## Learn More
 
-This project makes use of a list of npm packages. They can be installed during the process of setting up the application using `npm install`
+This project makes use of a list of npm packages. They can be installed during the process of setting up the application using `npm install`.
 
 - `axios` - For making external api calls / request.
 
